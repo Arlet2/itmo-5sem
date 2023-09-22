@@ -1,0 +1,511 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#"
+     xml:base="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#состоит_из -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#состоит_из">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#Ingredient"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#Potion"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#Potion"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#Ingredient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#Ingredient">
+        <rdfs:comment>Ингредиент зелья</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#Potion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#Potion">
+        <rdfs:comment>Зелье</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#acceleration_potion -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#acceleration_potion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#Potion"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#состоит_из"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#crude_potion"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#состоит_из"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#sugar"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#bounce_potion -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#bounce_potion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#Potion"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#состоит_из"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#crude_potion"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#состоит_из"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#rabbits_foot"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#cooked_spider_eye -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#cooked_spider_eye">
+        <rdf:type rdf:resource="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#Ingredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#crude_potion -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#crude_potion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#Potion"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#состоит_из"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#hell_growth_seeds"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#состоит_из"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#water_potion"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#fire_dust -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#fire_dust">
+        <rdf:type rdf:resource="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#Ingredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#fire_resistance_potion -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#fire_resistance_potion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#Potion"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#состоит_из"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#crude_potion"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#состоит_из"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#lava_cream"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#glowstone -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#glowstone">
+        <rdf:type rdf:resource="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#Ingredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#gold_carrot -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#gold_carrot">
+        <rdf:type rdf:resource="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#Ingredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#gold_watermelon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#gold_watermelon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#Ingredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#gust_tear -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#gust_tear">
+        <rdf:type rdf:resource="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#Ingredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#health_potion -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#health_potion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#Potion"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#состоит_из"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#crude_potion"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#состоит_из"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#gold_watermelon"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#hell_growth_seeds -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#hell_growth_seeds">
+        <rdf:type rdf:resource="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#Ingredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#lava_cream -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#lava_cream">
+        <rdf:type rdf:resource="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#Ingredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#needlefish -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#needlefish">
+        <rdf:type rdf:resource="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#Ingredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#night_vision_potion -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#night_vision_potion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#Potion"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#состоит_из"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#gold_carrot"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#состоит_из"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#crude_potion"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#phantom_membrane -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#phantom_membrane">
+        <rdf:type rdf:resource="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#Ingredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#poison_potion -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#poison_potion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#Potion"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#состоит_из"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#spider_eye"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#состоит_из"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#crude_potion"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#power_potion -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#power_potion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#Potion"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#состоит_из"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#fire_dust"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#состоит_из"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#crude_potion"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#rabbits_foot -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#rabbits_foot">
+        <rdf:type rdf:resource="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#Ingredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#redstone -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#redstone">
+        <rdf:type rdf:resource="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#Ingredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#regeneration_potion -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#regeneration_potion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#Potion"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#состоит_из"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#gust_tear"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#состоит_из"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#crude_potion"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#slow_fall_potion -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#slow_fall_potion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#Potion"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#состоит_из"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#phantom_membrane"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#состоит_из"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#crude_potion"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#spider_eye -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#spider_eye">
+        <rdf:type rdf:resource="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#Ingredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#sugar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#sugar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#Ingredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#thick_potion -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#thick_potion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#Potion"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#состоит_из"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#glowstone"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#состоит_из"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#water_potion"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#turtle_power_potion -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#turtle_power_potion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#Potion"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#состоит_из"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#crude_potion"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#состоит_из"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#turtle_shell"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#turtle_shell -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#turtle_shell">
+        <rdf:type rdf:resource="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#Ingredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#underwater_breath_potion -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#underwater_breath_potion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#Potion"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#состоит_из"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#crude_potion"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#состоит_из"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#needlefish"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#unmarkable_potion -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#unmarkable_potion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#Potion"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#состоит_из"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#water_potion"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#состоит_из"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#redstone"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#water_potion -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#water_potion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#Potion"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#weakness_potion -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#weakness_potion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#Potion"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#состоит_из"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#cooked_spider_eye"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#состоит_из"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/a.shulga/ontologies/2023/8/potions/1.0#thick_potion"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

@@ -1,0 +1,8 @@
+ingredient(glowstone).
+ingredient(bear).
+
+regeneration_potion(gust_tear, crude_potion), can_be_busted_by_glowstone(regeneration_potion).
+
+can_be_settling(X).
+
+can_be_busted_by_redstone(X), can_be_busted_by_glowstone(X).
