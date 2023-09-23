@@ -20,6 +20,16 @@ ingredient(rabbits_foot).
 ingredient(spider_eye).
 ingredient(cooked_spider_eye).
 
+% special ingredients
+special_ingredient(redstone).
+special_ingredient(glowstone).
+special_ingredient(dragon_breath).
+special_ingredient(cooked_spider_eye).
+special_ingredient(funeral).
+
+% base potion (cannot be created)
+base_potion(water_potion).
+
 % first tier potions
 potion(water_potion).
 potion(crude_potion).
@@ -67,8 +77,8 @@ can_be_explosive(Potion) :-
     not(Potion = crude_potion), 
     not(Potion = unmarkable_potion).
 
-% Can potion be busted with duration
-can_be_busted_by_redstone(Potion) :-
+% Can potion be boosted with duration
+can_be_boosted_by_redstone(Potion) :-
     potion(Potion),
     (
         Potion = fire_resistance_potion ;
@@ -84,8 +94,8 @@ can_be_busted_by_redstone(Potion) :-
         Potion = weakness_potion
     ).
 
-% Can potion be busted with power
-can_be_busted_by_glowstone(Potion) :-
+% Can potion be boosted with power
+can_be_boosted_by_glowstone(Potion) :-
     potion(Potion),
     (
         Potion = health_potion ;
